@@ -73,6 +73,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    perspective: 250rem;
 }
 
 .book .book-page {
@@ -188,6 +189,7 @@ body {
     right: 0;
     transform-style: preserve-3d;
     transform-origin: left;
+    transition: transform 1s cubic-bezier(.645, .045, .355, 1);
 }
 
 .book-page.page-right.turn {
@@ -268,7 +270,7 @@ body {
     transform: translateX(-50%);
 }
 
-.next-prev-btn {
+.nextprev-btn {
 
     position: absolute;
     bottom: .9rem;
@@ -284,12 +286,12 @@ body {
     transition: .5s;
 }
 
-.next-prev-btn:hover {
+.nextprev-btn:hover {
 
     color: var(--main-color);
 }
 
-.next-prev-btn.back {
+.nextprev-btn.back {
 
     left: 1.5rem;
 }
@@ -514,9 +516,32 @@ body {
     color: var(--main-color);
     display: inline-flex;
     transition: .5s;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.back-profile:hover {
+
+    background: var(--main-color);
+    color: var(--white-color);
 }
 
 .back-profile p {
 
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(.5);
+    color: var(--main-color);
+    font-size: 1rem;
+    opacity: 0;
+    transition: .5s;
+}
+
+.back-profile:hover p {
+
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    top: -1.8rem;
 }
