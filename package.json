@@ -1,0 +1,22 @@
+{
+  "name": "portifolio3d",
+  "version": "1.0.0",
+  "description": "Projeto será a construção do meu Portifólio em 3D. A linguagem utilizada é o Javascript, \r assim como HTML e CSS, como marcação e estilização. Projeto ainda inacabado.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wagnerlobo/portifolio_3d.git"
+  },
+  "author": "wagerlobo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wagnerlobo/portifolio_3d/issues"
+  },
+  "homepage": "https://github.com/wagnerlobo/portifolio_3d#readme",
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}
